@@ -29,7 +29,7 @@
     
     // 一般保存到cache目录里面
     NSString *dataPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-    dataPath = [dataPath stringByAppendingPathComponent:@"FriendCoinDB.sqlite"];
+    dataPath = [dataPath stringByAppendingPathComponent:@"Database.sqlite"];
     
     self.dataBase = [FMDatabase databaseWithPath:dataPath];
     if (self.dataBase) {
